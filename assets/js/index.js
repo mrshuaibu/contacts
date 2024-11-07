@@ -45,12 +45,17 @@ function addContact() {
     const [name, city, email] = contactInfo.split(',').map(item => item.trim());
 
     if (!name || !city || !email) {
-        errorMessage.textContent = "Enter a valid name, city, and email separated by commas.";
+        errorMessage.textContent = "Enter a valid name, city, and email separated by commas";
         errorMessage.style.display = 'block';
         return;
     }
     if (!isValidEmail(email)) {
-        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.textContent = "Please enter a valid email address";
+        errorMessage.style.display = 'block';
+        return;
+    }
+    if (name.length < 2) {
+        errorMessage.textContent = "Please enter a valid name";
         errorMessage.style.display = 'block';
         return;
     }
