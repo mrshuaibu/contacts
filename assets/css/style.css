@@ -35,7 +35,7 @@ header {
 body {
     background-color: #121A23;
     color: #fff;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /********************/

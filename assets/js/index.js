@@ -119,6 +119,3 @@ function removeContact(email) {
 }
 
 document.querySelector(".button").addEventListener("click", addContact);
-
-
-//Shuaibu Michael, Winnipeg, Shuaibumikel@gmail.com
